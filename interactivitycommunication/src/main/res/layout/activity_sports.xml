@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.interactivitycommunication.SportsActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <CheckBox
+        android:id="@+id/chAndroid"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginTop="57dp"
+        android:text="Android"
+        app:layout_constraintBottom_toTopOf="@+id/chApple"
+        app:layout_constraintEnd_toStartOf="@+id/btnOK"
+        app:layout_constraintStart_toStartOf="@+id/chApple"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chApple"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="38dp"
+        android:text="Apple"
+        app:layout_constraintBottom_toTopOf="@+id/chWindows"
+        app:layout_constraintEnd_toEndOf="@+id/chWindows"
+        app:layout_constraintStart_toStartOf="@+id/chWindows"
+        app:layout_constraintTop_toBottomOf="@+id/chAndroid" />
+
+    <CheckBox
+        android:id="@+id/chWindows"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="59dp"
+        android:layout_marginEnd="2dp"
+        android:text="Windows"
+        app:layout_constraintBottom_toTopOf="@+id/txtCompanies"
+        app:layout_constraintEnd_toStartOf="@+id/btnOK"
+        app:layout_constraintStart_toStartOf="@+id/txtCompanies"
+        app:layout_constraintTop_toBottomOf="@+id/chApple"
+        android:layout_marginRight="2dp" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="65dp"
+        android:layout_marginTop="37dp"
+        android:onClick="onMain"
+        android:text="OK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtCompanies"
+        app:layout_constraintTop_toTopOf="@+id/txtCompanies"
+        android:layout_marginRight="65dp" />
+
+    <TextView
+        android:id="@+id/txtCompanies"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="174dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginStart="53dp"
+        android:hint="Companies"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnOK"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chWindows"
+        android:layout_marginRight="37dp"
+        android:layout_marginLeft="53dp" />
+
+</android.support.constraint.ConstraintLayout>

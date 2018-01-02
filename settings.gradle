@@ -1,1 +1,1 @@
-include ':app', ':layouts', ':whatsappscreen', ':interactivitycommunication', ':gridview', ':compoundview', ':customview', ':adapterview'
+include ':app', ':layouts', ':whatsappscreen', ':interactivitycommunication', ':gridview', ':compoundview', ':customview', ':adapterview', ':customview2', ':customview3'

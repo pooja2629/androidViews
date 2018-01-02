@@ -26,6 +26,7 @@ public class MyAdapter extends BaseAdapter {
             this.dataSet= dataSet;
 
         inflater= LayoutInflater.from(context);
+
     }
     @Override
     public int getCount() {

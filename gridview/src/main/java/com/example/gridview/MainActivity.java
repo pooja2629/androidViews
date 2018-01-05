@@ -22,6 +22,6 @@ public class MainActivity extends AppCompatActivity {
         MyAdapter adapter =new MyAdapter(this, dataSet);
 
         ((GridView)findViewById(R.id.gridIcons)).setAdapter(adapter);
-    }
 
+    }
 }

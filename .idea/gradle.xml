@@ -8,6 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/activitylifecycle" />
             <option value="$PROJECT_DIR$/adapterview" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/compoundview" />
@@ -17,6 +18,7 @@
             <option value="$PROJECT_DIR$/gridview" />
             <option value="$PROJECT_DIR$/interactivitycommunication" />
             <option value="$PROJECT_DIR$/layouts" />
+            <option value="$PROJECT_DIR$/viewanimations" />
             <option value="$PROJECT_DIR$/whatsappscreen" />
           </set>
         </option>

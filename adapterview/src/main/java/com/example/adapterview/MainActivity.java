@@ -14,6 +14,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        cstAdp();
+
+    }
+    private void arrAdp() {
+
         final ArrayList<String> pcs = new ArrayList<>();
         pcs.add("Windows");
         pcs.add("Mac");
@@ -21,14 +26,52 @@ public class MainActivity extends AppCompatActivity {
         pcs.add("IBM");
         pcs.add("Super");
         pcs.add("Quantum");
-
         ArrayAdapter adapter = new ArrayAdapter<String>(
                 this,
                 android.R.layout.simple_list_item_1,
                 pcs
         );
         ListView lstVw = findViewById(R.id.lstVw);
-
         lstVw.setAdapter(adapter);
     }
+    private void cstAdp() {
+        List<ImgItem> dtSt = new ArrayList<>();
+        dtSt.add(
+                new ImgItem(
+                        R.mipmap.ic_launcher,
+                        "Windows"
+                )
+        );
+        dtSt.add(
+                new ImgItem(
+                        R.mipmap.ic_launcher,
+                        "Mac"
+                )
+        );
+        dtSt.add(
+                new ImgItem(
+                        R.mipmap.ic_launcher,
+                        "IBM"
+                )
+        );
+        dtSt.add(
+                new ImgItem(
+                        R.drawable.ic_launcher_foreground,
+                        "Quantum"
+                )
+        );
+        dtSt.add(
+                new ImgItem(
+                        R.drawable.ic_launcher_foreground,
+                        "Dell"
+                )
+        );
+        ImgAdapter adapter = new ImgAdapter(this, (ArrayList<ImgItem>) dtSt
+        );
+
+
+        ListView lstView = findViewById(R.id.lstVw);
+        lstView.setAdapter(adapter);
+    }
+
 }

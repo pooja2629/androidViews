@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="btnWdt">150dp</dimen>
+    <dimen name="btnHt">150dp</dimen>
+
+</resources>

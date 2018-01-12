@@ -10,14 +10,18 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/activitylifecycle" />
             <option value="$PROJECT_DIR$/adapterview" />
+            <option value="$PROJECT_DIR$/alternativeresources" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/compoundview" />
             <option value="$PROJECT_DIR$/customview" />
             <option value="$PROJECT_DIR$/customview2" />
             <option value="$PROJECT_DIR$/customview3" />
+            <option value="$PROJECT_DIR$/fragments" />
             <option value="$PROJECT_DIR$/gridview" />
             <option value="$PROJECT_DIR$/interactivitycommunication" />
             <option value="$PROJECT_DIR$/layouts" />
+            <option value="$PROJECT_DIR$/providingresources" />
+            <option value="$PROJECT_DIR$/simplevalueresources" />
             <option value="$PROJECT_DIR$/viewanimations" />
             <option value="$PROJECT_DIR$/whatsappscreen" />
           </set>

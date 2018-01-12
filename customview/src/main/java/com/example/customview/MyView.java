@@ -13,7 +13,7 @@ import android.widget.EditText;
  * Created by Pooja on 02-01-2018.
  */
 
-public class MyView extends EditText {
+public class MyView extends android.support.v7.widget.AppCompatEditText {
     private Paint paint;
 
     private float cx, cy;

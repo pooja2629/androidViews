@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Simple Value Resources</string>
+    <string name="btnOkay">Okay</string>
+    <string name="txtInfo">Info</string>
+
+    <string-array name="mob">
+        <item> Dell </item>
+        <item> Moto </item>
+        <item> China </item>
+    </string-array>
+</resources>

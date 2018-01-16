@@ -5,10 +5,8 @@ import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.app.TimePickerDialog;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.annotation.RequiresApi;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
@@ -39,6 +37,7 @@ public class AppDialog extends DialogFragment {
         else if (getTag().equals(AppDialog.TAG_DATE)) dialog = datePicker();
         else if (getTag().equals(AppDialog.TAG_TIME)) dialog = timePicker();
         else if (getTag().equals(AppDialog.TAG_PROGRESS)) dialog = progressDialog();
+        else dialog=custom();
         return dialog;
     }
     private AlertDialog alert(){
@@ -70,6 +69,14 @@ public class AppDialog extends DialogFragment {
        // dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
          return dialog;
+    }
+
+    private Dialog custom(){
+        final View view= getActivity().getLayoutInflater().inflate
+                (R.layout.custom_dialog,null,false);
+        AlertDialog.Builder builder=new AlertDialog.Builder(getActivity());
+        builder.setView(view);
+        return builder.create();
     }
 
     private void mt(String msg){
